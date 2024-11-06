@@ -6,7 +6,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--language",
         action="store",
-        default="en",
+        default="uk",
         help="Set language for testing"
     )
 
