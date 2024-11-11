@@ -16,3 +16,9 @@ class BasePage:
             return False
 
         return True
+
+    def compare_elements(self, el1, el2):
+        el1_text = self.browser.find_element(*el1).text
+        el2_text = self.browser.find_element(*el2).text
+
+        return el1_text == el2_text
